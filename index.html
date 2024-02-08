@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/Logo.svg" class="logo" alt="LogoAlura">
+    </header><!-- Remove the unnecessary closing </header> tag -->
+    <main>
+        <div class="texto">
+            <textarea id="texto" cols="85" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="botones">
+                <input id="encriptar" type="button" onclick="encriptar()" value="Encriptar" aria-label="encriptar">
+                <input id="desencriptar" type="button" value="Desencriptar" aria-label="desencriptar"
+                    onclick="desencriptar()">
+            </div>
+        </div>
+        <div class="terminos">
+            <p><img id="exl" src="img/bi_exclamation-circle-fill.svg" alt=""> Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="imagen">
+            <div class="mensaje">
+                <img id="imagenreferencia" src="img/Muñeco.svg" alt="Description of the image">
+                <div class="titulomensaje">
+                    <h2 id="titulomensaje">Ningun texto fue encontrado</h2>
+                </div>
+                <div class="parrafo">
+                    <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="derechos">
+            <p>&copy; Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+
+</html>
